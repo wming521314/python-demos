@@ -1,0 +1,1 @@
+1.install mysqldb package :  sudo pip install mysql-python
