@@ -1,0 +1,13 @@
+server {
+	listen 9090;
+	server_name 127.0.0.1;
+	charset utf-8;
+	access_log /var/log/nginx/demo_access.log;
+	error_log /var/log/nginx/demo/demo_error.log;
+	location /
+	{
+		include uwsgi_params;
+		uwsgi_pass 127.0.0.1:6666;
+	}
+
+}
